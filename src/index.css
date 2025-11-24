@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Calming lavender-purple gradient palette */
+    --background: 260 100% 99%;
+    --foreground: 260 60% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 60% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 60% 15%;
+
+    /* Primary: Soft purple */
+    --primary: 262 52% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 70% 75%;
+
+    /* Secondary: Light lavender */
+    --secondary: 260 60% 95%;
+    --secondary-foreground: 260 60% 25%;
+
+    /* Muted: Very light purple */
+    --muted: 260 40% 96%;
+    --muted-foreground: 260 20% 50%;
+
+    /* Accent: Calm blue-purple */
+    --accent: 250 60% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 30% 90%;
+    --input: 260 30% 90%;
+    --ring: 262 52% 65%;
+
+    --radius: 1rem;
+
+    /* Custom gradient colors */
+    --gradient-start: 262 52% 65%;
+    --gradient-mid: 280 60% 70%;
+    --gradient-end: 250 60% 75%;
+
+    /* Glass morphism */
+    --glass-bg: 260 100% 99% / 0.6;
+    --glass-border: 260 30% 90% / 0.3;
+
+    /* Shadows */
+    --shadow-soft: 260 40% 80%;
+    --shadow-medium: 260 40% 70%;
+  }
+
+  .dark {
+    --background: 260 50% 8%;
+    --foreground: 260 20% 95%;
+
+    --card: 260 40% 12%;
+    --card-foreground: 260 20% 95%;
+
+    --popover: 260 40% 12%;
+    --popover-foreground: 260 20% 95%;
+
+    --primary: 262 52% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 30% 20%;
+    --secondary-foreground: 260 20% 95%;
+
+    --muted: 260 30% 18%;
+    --muted-foreground: 260 20% 70%;
+
+    --accent: 250 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 30% 25%;
+    --input: 260 30% 25%;
+    --ring: 262 52% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(260 100% 97%) 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-lg border border-white/30 shadow-lg;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary via-accent to-primary;
+  }
+
+  .breathing-animation {
+    animation: breathe 3s ease-in-out infinite;
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+  }
+
+  .glass-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -4px hsl(var(--primary) / 0.2);
+  }
+}

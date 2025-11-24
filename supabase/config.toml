@@ -1,0 +1,13 @@
+project_id = "qdwetjaxdnpxymbwozbw"
+
+[functions.chat-with-sol]
+verify_jwt = true
+
+[functions.generate-chat-summary]
+verify_jwt = true
+
+[functions.analyze-emotion]
+verify_jwt = true
+
+[functions.generate-meditation]
+verify_jwt = false
