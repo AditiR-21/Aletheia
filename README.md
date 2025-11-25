@@ -1,78 +1,99 @@
-<div align="center">
-🌿 Aletheia
-  </div>
-AI Emotional Wellness & Mood Companion
-<div align="center">
 
- Your personal AI-powered mental & emotional support system 
 
-</div>
-<b>Overview</b>
+# 🌿 Aletheia — AI Emotional Wellness Companion
 
-Aletheia helps users:
+Aletheia is an AI-powered emotional wellness platform that helps users track emotions, maintain journals, meditate, chat with an AI companion, and understand emotional patterns through intelligent visualizations.
 
-Track emotions using text or voice
 
-Maintain an AI-powered mood journal
 
-Meditate with guided sessions
+##  Features
 
-Chat with an empathetic AI companion (“Sol”)
+### 🧠 AI Emotion Analyzer
+- Detects emotions from text or voice  
+- Generates emotion tag, intensity, and AI summary  
+- Auto-saves results  
 
-View mood calendars & emotional trends
+### 📘 Smart Journal
+- Create, edit, delete journal entries  
+- Auto emotion tagging  
+- “Discuss with Sol” button  
 
-Build long-term emotional awareness
+### 💬 Sol — AI Emotional Companion
+- Human-like reflective conversations  
+- Uses journal context  
+- Saves chat history  
 
-<b>Features</b>
-🧠 AI Emotion Analyzer
+### 🧘‍♂️ Guided Meditation
+- Breathing exercises  
+- Short calming sessions  
+- Tracks meditation history  
 
-Detects emotion (joy, stress, anxiety, sadness, calmness)
+### 📊 Emotional Dashboard
+- Mood timeline  
+- Emotion distribution charts  
+- Weekly trends  
 
-Gives intensity, summary, and recommendations
 
-Works for both text + voice
+## 🏗 Tech Stack
 
-Saves emotion insights automatically
+**Frontend:** React, TailwindCSS, Framer Motion  
+**Backend:** Lovable Cloud / FastAPI  
+**AI:** LLM-based emotion analysis & therapy chat  
+**Database:** Supabase-style DB with RLS  
 
-📘 Smart Journal
+# Team
 
-Create, edit, delete entries
+### **1. Aditi — AI Modelling & Emotion Analysis Integration**
+**Responsibilities:**
+- Designed Sol AI Companion behavior using LLM prompt engineering  
+- Integrated emotion analysis API  
+- Extracted emotion, intensity, summary, and mood categories  
+- Transformed raw user inputs into structured emotional insights  
 
-Each entry auto-tagged with emotion
+**Impact:**  
+Aditi enabled intelligent emotion understanding — the core of the wellness system.
 
-“Discuss with Sol” → sends journal entry to AI chat
+---
 
-💬 Sol — AI Emotional Companion
+### **2. Andrea — Smart Journal & Backend Integration**
+**Responsibilities:**
+- Developed Smart Journal module  
+- Implemented backend CRUD operations  
+- Built auto-emotion tagging logic  
+- Linked journal UI with the AI analysis backend  
 
-Human-like reflective conversations
+**Impact:**  
+Andrea enabled structured emotional record-keeping with seamless backend support.
 
-Uses journal context
+---
 
-Saves full chat history
+### **3. Aastha — Dashboard & Data Analytics**
+**Responsibilities:**
+- Designed analytics dashboard  
+- Built emotion distribution, trends, and mood calendar  
+- Implemented backend aggregation queries  
+- Synced analysis results with dashboard visuals  
 
-Voice-enabled interaction
+**Impact:**  
+Aastha delivered the analytical backbone that shows long-term mental wellness trends.
 
-🧘‍♂️ Meditation Mode
+---
 
-Short calming sessions
+### **4. Akansha — Frontend UI, Intro Pages & Authentication**
+**Responsibilities:**
+- Built core frontend UI and navigation  
+- Created Home, About, Login & Authentication pages  
+- Designed app layout and visual styling  
+- Integrated UI with AI, Journal, Chat, and Dashboard modules  
 
-Breathing animation
+**Impact:**  
+Akansha shaped the platform’s UI/UX, making the app calm, clean, and user-friendly.
 
-Logs meditation history
+## Installation
 
-📊 Emotional Dashboard
-
-Mood timeline
-
-Emotion distribution charts
-
-Weekly trends
-
-Most common emotions
-
-🏗 Tech Stack
-
-Frontend: React, TailwindCSS, Framer Motion
-Backend: Lovable Cloud / FastAPI
-AI: LLM-based emotion analysis & therapy chat
-Database: Supabase-style DB with Row-Level Security
+```bash
+npm install
+npm run dev
+```
+## License
+MIT License  
