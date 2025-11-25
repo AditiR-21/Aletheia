@@ -1,11 +1,13 @@
+<div align="center">
 🌿 Aletheia
+  </div>
 AI Emotional Wellness & Mood Companion
 <div align="center">
 
-✨ Your personal AI-powered mental & emotional support system ✨
+ Your personal AI-powered mental & emotional support system 
 
 </div>
-🔥 Overview
+<b>Overview</b>
 
 Aletheia helps users:
 
@@ -21,7 +23,7 @@ View mood calendars & emotional trends
 
 Build long-term emotional awareness
 
-🌟 Features
+<b>Features</b>
 🧠 AI Emotion Analyzer
 
 Detects emotion (joy, stress, anxiety, sadness, calmness)
