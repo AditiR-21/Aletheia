@@ -152,7 +152,48 @@ export type Database = {
         }
         Relationships: []
       }
-    }
+     meditation_sessions: {
+        Row: {
+          ai_summary: string | null
+          completed_at: string
+          created_at: string
+          duration_minutes: number
+          emotion_after: string | null
+          emotion_after_intensity: number | null
+          emotion_before: string | null
+          emotion_before_intensity: number | null
+          id: string
+          meditation_type: string
+          user_id: string
+        }
+        Insert: {
+          ai_summary?: string | null
+          completed_at?: string
+          created_at?: string
+          duration_minutes: number
+          emotion_after?: string | null
+          emotion_after_intensity?: number | null
+          emotion_before?: string | null
+          emotion_before_intensity?: number | null
+          id?: string
+          meditation_type: string
+          user_id: string
+        }
+        Update: {
+          ai_summary?: string | null
+          completed_at?: string
+          created_at?: string
+          duration_minutes?: number
+          emotion_after?: string | null
+          emotion_after_intensity?: number | null
+          emotion_before?: string | null
+          emotion_before_intensity?: number | null
+          id?: string
+          meditation_type?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     Views: {
       [_ in never]: never
     }
