@@ -285,7 +285,15 @@ const Chat = () => {
 
   const clearChat = async () => {
     try {
-      const { error } = await supabase.from("chat_messages").delete().neq("id", "");
+      const { data: { user } } = await supabase.auth.getUser();
+if (!user) throw new Error("No user found");
+
+const { error } = await supabase
+  .from("chat_messages")
+  .delete()
+  .eq("user_id", user.id);
+if (error) throw error;
+
       if (error) throw error;
 
       setMessages([]);
