@@ -11,3 +11,6 @@ verify_jwt = true
 
 [functions.generate-meditation]
 verify_jwt = false
+
+[functions.meditation-ai]
+verify_jwt = true
