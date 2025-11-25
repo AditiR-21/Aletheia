@@ -4,6 +4,12 @@
 
 Aletheia is an AI-powered emotional wellness platform that helps users track emotions, maintain journals, meditate, chat with an AI companion, and understand emotional patterns through intelligent visualizations.
 
+## 🎥 Demo / Video Showcase
+Here is a quick demonstration of how Aletheia works:
+
+🎬 Video:
+ https://drive.google.com/file/d/1d9vr6ZBEhA6KdO3sqVTJnbJAiBwVXvST/view?usp=sharing
+
 
 
 ##  Features
