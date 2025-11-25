@@ -294,7 +294,6 @@ const { error } = await supabase
   .eq("user_id", user.id);
 if (error) throw error;
 
-      if (error) throw error;
 
       setMessages([]);
       toast({ title: "Chat cleared" });
